@@ -15,6 +15,7 @@ public class JaggedArray
         k[1] = new int[2];
         k[2] = new int[3];
         
+        //as it returns a whole row as a array
         for (int i[] : array)
         {
             for (int j : i)
