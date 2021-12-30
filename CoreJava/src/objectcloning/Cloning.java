@@ -1,4 +1,4 @@
-package ObjectCloning;
+package objectcloning;
 
 public class Cloning
 {

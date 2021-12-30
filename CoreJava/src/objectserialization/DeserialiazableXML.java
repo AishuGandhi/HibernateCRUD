@@ -1,4 +1,4 @@
-package ObjectSerialization;
+package objectserialization;
 
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;

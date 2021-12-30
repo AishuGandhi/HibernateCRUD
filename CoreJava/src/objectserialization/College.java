@@ -1,4 +1,4 @@
-package ObjectSerialization;
+package objectserialization;
 
 import java.util.List;
 

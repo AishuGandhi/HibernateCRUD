@@ -1,4 +1,4 @@
-package ObjectSerialization;
+package objectserialization;
 
 public class Student
 {
@@ -33,6 +33,14 @@ public class Student
     public String toString()
     {
         return "Student {rollNo=" + rollNo + ", name=" + name + "}";
+    }
+    public void show()
+    {
+        System.out.println("Hello Welcome to Relection API");
+    }
+    private void display()
+    {
+        System.out.println("Hello Welcome to Relection API Private Method Demo");
     }
 
 }
