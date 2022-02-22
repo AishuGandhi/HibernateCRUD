@@ -3,6 +3,7 @@ package collection;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -37,8 +38,33 @@ public class CollectionTuts
         
         Collections.sort(list);
         System.out.println("List After Sorting:");
+        list.forEach(System.out::println);
+        Collections.reverse(list);
+        System.out.println("List After Reverse Sorting:");
         list.forEach(System.out::println);//Stream Expression using Lamda Expression
         
+        //Sort List Based Upon Last Digit of Number
+        List<Integer> l = new ArrayList<>();
+        l.add(581);
+        l.add(107);
+        l.add(376);    
+        l.add(2,762);
+        Comparator<Integer> com = new ComparatorImpl();
+        /**
+         * OR 
+         * Use Anonymous Class & Lambda Expression
+         */
+        Comparator<Integer> com1 = (a , b) ->{
+            if(a%10 > b%10 )
+             return 1;
+          return -1;
+          //return a%10 > b%10 ? 1:-1;
+        };
+                        
+                         
+                        
+        Collections.sort(l,com);
+        System.out.println("Comparator List Sorting"+l);
         //Add unique elements & randomly numbers are printed
         Set<Integer> set = new HashSet<>();
         set.add(70);
@@ -47,6 +73,7 @@ public class CollectionTuts
         set.add(30);
         set.add(50);
         System.out.println("Set:"+set);
+ 
         
         //Add unique elements & sorted numbers are printed
         Set<Integer> treeSet = new TreeSet<>();
