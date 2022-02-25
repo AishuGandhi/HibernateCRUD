@@ -2,6 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/u724611/Downloads/mysql-connector-java-8.0.27.jar"/>
+	<classpathentry kind="lib" path="C:/MyData/QRCodeJars/jar_files/qrcode-generator-1.4.4.jar"/>
 	<classpathentry kind="lib" path="C:/MyData/QRCodeJars/jar_files/zxing-core-1.7.jar"/>
 	<classpathentry kind="lib" path="C:/MyData/QRCodeJars/jar_files/zxing-j2se-1.7.jar"/>
 	<classpathentry kind="lib" path="C:/MyData/QRCodeJars/jar_files/qrgen-1.2.jar"/>
